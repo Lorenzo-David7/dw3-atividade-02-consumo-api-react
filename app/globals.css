@@ -1,0 +1,79 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #0f1115;
+  color: #e8e8e8;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.topo {
+  background: #181b22;
+  padding: 16px 24px;
+  font-weight: 700;
+  color: #97ce4c;
+  border-bottom: 1px solid #262a33;
+}
+
+.conteudo { max-width: 1100px; margin: 0 auto; padding: 24px; }
+
+h1 { color: #97ce4c; margin-bottom: 4px; }
+.sub { color: #9aa0ab; margin-bottom: 24px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #181b22;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #262a33;
+  transition: transform 0.15s, border-color 0.15s;
+}
+.card:hover { transform: translateY(-4px); border-color: #97ce4c; }
+.card img { width: 100%; height: auto; display: block; }
+.card-info { padding: 12px; }
+.card-info h2 { font-size: 1rem; margin-bottom: 6px; }
+
+.status { font-size: 0.85rem; color: #9aa0ab; }
+.status.alive { color: #55cc44; }
+.status.dead { color: #d63d2e; }
+
+.paginacao {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.paginacao a {
+  background: #97ce4c;
+  color: #0f1115;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.voltar {
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #97ce4c;
+  color: #0f1115;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.detalhes {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  background: #181b22;
+  border: 1px solid #262a33;
+  border-radius: 12px;
+  padding: 24px;
+}
+.detalhes img { border-radius: 12px; max-width: 100%; height: auto; }
+.detalhes ul { list-style: none; margin-top: 16px; line-height: 2; }
